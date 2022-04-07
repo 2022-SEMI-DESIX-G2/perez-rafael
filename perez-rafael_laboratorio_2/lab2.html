@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2</title>
+</head>
+
+<body>
+    <h2>Laboratorio #2 - Problemas básicos con Javascript</h2>
+    <!-- primer problema: ¿Qué es Javascript y en qué se asemeja a Java? -->
+    <h3>1. ¿Qué es Javascript y en qué se asemeja a Java?</h3>
+    <p>JavaScript es un lenguaje de programación orientada a objetos, basados en prototipos, imperativo, debilmente tipado y dinámico. Se asemeja con java en cuanto ambos proceden del lenguaje de programación C, por lo tanto tienen la misma estrutura y mismo
+        nombre.
+    </p>
+
+    <script>
+        //segundo problema: operaciones.
+        var num1 = 20;
+        var num2 = 5;
+        var sum, rest, div, mult;
+        suma = parseFloat(num1) + parseFloat(num2);
+        rest = parseFloat(num1) - parseFloat(num2);
+        div = parseFloat(num1) / parseFloat(num2);
+        mult = parseFloat(num1) * parseFloat(num2);
+        console.log("la suma es: " + suma);
+        console.log("la resta es: " + rest);
+        console.log("la división es: " + div);
+        console.log("la multipliación es: " + mult);
+        // 3er problema: concatenación.
+        let a = "ralph";
+        let b = "sebas";
+        console.log("La concatenación es: " + a + b);
+        // 4to problema: tipo de dato.
+        const x = 3;
+        const y = "rafa";
+        console.log("Esta variable es tipo: " + typeof x);
+        console.log("Estsa variable es tipo: " + typeof y);
+        // 5to problema: variable tipo objeto.
+        var objeto = {
+            numero: 0,
+            palabra: 'perez',
+            booleano: true,
+            obj2: new Object(),
+        };
+        console.table(objeto);
+    </script>
+</body>
+
+</html>
