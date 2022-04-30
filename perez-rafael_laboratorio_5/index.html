@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #5</title>
+</head>
+
+<body>
+    <section id="principal">
+        <div id="titulo">
+            <h1>Secuencia de Fibonacci</h1>
+        </div>
+        <form id="formulario-fibo">
+            <label for="cantidad">Ingrese la cantidad de elementos de la serie de fibonacci:</label>
+            <input id="cantidad" type="text">
+            <button id="boton-calcular" type="submit">Calcular</button>
+        </form>
+    </section>
+    <section id="respuestas">
+        <div id="confirmacion">
+        </div>
+        <div id="respuesta"></div>
+    </section>
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+
+    <style>
+        h1 {
+            color: #f1f1f1;
+        }
+        
+        #principal {
+            background: rgb(106, 106, 209);
+            background: radial-gradient(circle, rgba(106, 106, 209, 1) 0%, rgba(14, 48, 111, 1) 0%, rgba(63, 148, 150, 1) 100%, rgba(32, 227, 228, 1) 100%, rgba(24, 106, 122, 1) 100%);
+            text-align: center;
+            color: #f1f1f1;
+            padding: 1rem;
+        }
+        
+        body {
+            background-image: url("recurso/fondo.jpg");
+        }
+        
+        #respuesta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        #confirmacion div {
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            color: white;
+            background-color: rgb(116, 102, 102);
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #boton-calcular {
+            color: white;
+            border-radius: 7px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            background: rgb(202, 60, 60);
+        }
+        
+        .carta {
+            display: flex;
+            justify-content: center;
+            border: 1px solid grey;
+            background-color: white;
+            padding: 0.8rem;
+            margin: 0.5rem;
+            min-width: 50px;
+            min-height: auto;
+            cursor: pointer;
+            margin-top: 1rem;
+            border-radius: 3px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        
+        .carta:hover {
+            box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+            color: darkred;
+        }
+    </style>
+</body>
+
+
+</html>
