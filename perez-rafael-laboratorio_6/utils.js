@@ -1,0 +1,52 @@
+(() => {
+    const Utils = {
+        settings: {
+            backendBaseUrl: "https://pokeapi.co/api/v2",
+        },
+        getFormattedBackendUrl: ({query, searchType}) => {
+            return `${Utils.settings.backendBaseUrl}/${searchType}/${query}`;
+        },
+        getPokemon: ({query, searchType = "pokemon"}) => {
+            return Utils.fetch({
+                url: Utils.getFormattedBackendUrl({query, searchType}),
+                searchType,
+            });
+        },
+        getData: async (url) => {
+            try {
+                const rawResponse = await fetch(url);
+                if (rawResponse.status !== 200) {
+                    throw new Error(`Not found`);
+                }
+                return rawResponse.json();
+            } catch (error) {
+                throw error;
+            }
+        },
+        getSpecies: async (url) => {
+            const response = await Utils.getData(url);
+            return response;
+        },
+        getEvolutionChain: async (url) => {
+            const response = await Utils.getSpecies(url);
+            return response;
+        },
+        getPrueba: async (url) => {
+            const response = await fetch(url);
+            const species = await response.json();
+            return species;
+        },
+        fetch: async ({url, searchType}) => {
+            try {
+                const rawResponse = await fetch(url);
+                if (rawResponse.status !== 200) {
+                    throw new Error(`${searchType} not found`);
+                }
+                return rawResponse.json();
+            } catch (error) {
+                throw error;
+            }
+        },
+    };
+    document.Utils = Utils;
+})();

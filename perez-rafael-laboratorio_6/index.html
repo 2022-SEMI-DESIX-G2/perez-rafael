@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #6</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="http://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="formulario">
+        <div class="logo">
+            <img src="image.png" />
+        </div>
+        <h1>Buscador de pokemones</h1>
+        <p>Busca desde pokemones hasta las habilidades de los mismos.</p>
+        <form id="pokemon-finder-form">
+            <div class="buscador">
+                <div>
+                    <label for="pokemon-finder-query">Buscar</label>
+                    <input id="pokemon-finder-query" type="text" value="">
+                </div>
+                <div>
+                    <label for="pokemon-finder-search-type">Tipo de búsqueda</label>
+                    <select id="pokemon-finder-search-type">
+                        <option value="pokemon">Por pokemon</option>
+                        <option value="ability">Por habilidad</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="accion">
+                <div id="resetForm">
+
+                </div>
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
+    </section>
+    <section id="pokemon-finder-response"></section>
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
