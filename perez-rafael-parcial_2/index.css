@@ -1,0 +1,176 @@
+html {
+    background: #031926;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+    width: 536px;
+    font-size: 12px;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+}
+
+.logo img {
+    position: relative;
+    top: -85px;
+    left: 92px;
+    width: 257px;
+    height: 103px;
+    text-align: center;
+}
+
+.logo-git {
+    position: absolute;
+    left: 97.57%;
+    right: 1.98%;
+    top: 1.78%;
+    bottom: 97.03%;
+}
+
+section.formulario {
+    margin-top: 100px;
+    padding: 14px 47px;
+    background: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+section#pokemon-finder-response .carta {
+    margin-top: 25px;
+    padding: 14px 47px;
+    background: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#pokemon-finder-response h1 {
+    margin-top: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+}
+
+#pokemon-finder-response h3 {
+    font-size: 12px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.svgEye {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin: 1px 0 0 5px;
+}
+
+.svgBaby {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin: 1px 0 0 5px;
+}
+
+.formulario h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.formulario p {
+    font-size: 12px;
+}
+
+.buscador,
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buscador div,
+.info .columna {
+    width: 218px;
+}
+
+.buscador label {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.buscador input {
+    width: 100%;
+    background: #e8e8e8;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.buscador select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: #e8e8e8;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.accion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.accion button {
+    background-color: #19a5f8;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    line-height: 14px;
+    padding: 7px;
+    width: 108px;
+}
+
+h1.error {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+h1.error span {
+    margin-right: 10px;
+}
+
+.listado {
+    padding-left: 20px;
+    padding-top: 0;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.sprite {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: -6px;
+}
